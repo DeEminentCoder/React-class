@@ -5,6 +5,12 @@ const Signup = () => {
     const [lastname, setlastname] = useState("");
     const [email, setemail] = useState("");
     const [password, setpassword] = useState("");
+    const [studentArr, setstudentArray] = useState([])
+
+    const submitDetails = () => {
+      let stdDetails = {firstname, lastname, email, password}
+      console.log(stdDetails);
+    }
   return (
     <>
       <div className="container-fluid mx-auto col-8 mt-lg-5 mt-md-3 mt-1 shadow-sm py-3">
@@ -53,6 +59,10 @@ const Signup = () => {
             onChange={(e) => setpassword(e.target.value)}
           />
           <label htmlFor="Password">Password</label>
+        </div>
+
+        <div className="my-3">
+          <button className="btn btn-primary w-100" onClick={submitDetails}>Submit</button>
         </div>
 
       </div>
