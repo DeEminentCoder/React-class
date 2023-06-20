@@ -10,6 +10,12 @@ const Signup = () => {
     const submitDetails = () => {
       let stdDetails = {firstname, lastname, email, password}
       console.log(stdDetails);
+      setstudentArray([...studentArr, stdDetails])
+      console.log(studentArr);
+      setfirstname("")
+      setlastname("")
+      setemail("")
+      setpassword("")
     }
   return (
     <>
