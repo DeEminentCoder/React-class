@@ -72,6 +72,31 @@ const Signup = () => {
         </div>
 
       </div>
+
+      <table className="table">
+        <tr>
+          <th>S/N</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Email</th>
+          <th>Actions</th>
+        </tr>
+
+        {
+          studentArr.map((item,index)=>(
+        <tr key={index}>
+          <td>{index +1}</td>
+          <td>{item.firstname}</td>
+          <td>{item.lastname}</td>
+          <td>{item.email}</td>
+          <td>
+            <button className="btn btn-danger btn-sm">Delete</button>
+            <button className="btn btn-warning btn-sm">Edit</button>
+          </td>
+        </tr>
+        ))
+      }
+      </table>
     </>
   );
 };
