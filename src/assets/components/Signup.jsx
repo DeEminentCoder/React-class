@@ -1,26 +1,25 @@
 import React, { useState } from "react";
 
 const Signup = () => {
-    const [firstname, setfirstname] = useState("");
-    const [lastname, setlastname] = useState("");
-    const [email, setemail] = useState("");
-    const [password, setpassword] = useState("");
-    const [studentArr, setstudentArray] = useState([])
+  const [firstname, setfirstname] = useState("");
+  const [lastname, setlastname] = useState("");
+  const [email, setemail] = useState("");
+  const [password, setpassword] = useState("");
+  const [studentArr, setstudentArray] = useState([]);
 
-    const submitDetails = () => {
-      let stdDetails = {firstname, lastname, email, password}
-      console.log(stdDetails);
-      setstudentArray([...studentArr, stdDetails])
-      console.log(studentArr);
-      setfirstname("")
-      setlastname("")
-      setemail("")
-      setpassword("")
-    }
+  const submitDetails = () => {
+    let stdDetails = { firstname, lastname, email, password };
+    console.log(stdDetails);
+    setstudentArray([...studentArr, stdDetails]);
+    console.log(studentArr);
+    setfirstname("");
+    setlastname("");
+    setemail("");
+    setpassword("");
+  };
   return (
     <>
       <div className="container-fluid mx-auto col-8 mt-lg-5 mt-md-3 mt-1 shadow-sm py-3">
-
         <h2 className="text-center text-decoration-underline text-primary">
           Sign up Page
         </h2>
@@ -68,9 +67,10 @@ const Signup = () => {
         </div>
 
         <div className="my-3">
-          <button className="btn btn-primary w-100" onClick={submitDetails}>Submit</button>
+          <button className="btn btn-primary w-100" onClick={submitDetails}>
+            Submit
+          </button>
         </div>
-
       </div>
 
       <table className="table">
@@ -82,20 +82,18 @@ const Signup = () => {
           <th>Actions</th>
         </tr>
 
-        {
-          studentArr.map((item,index)=>(
-        <tr key={index}>
-          <td>{index +1}</td>
-          <td>{item.firstname}</td>
-          <td>{item.lastname}</td>
-          <td>{item.email}</td>
-          <td>
-            <button className="btn btn-danger btn-sm">Delete</button>
-            <button className="btn btn-warning btn-sm">Edit</button>
-          </td>
-        </tr>
-        ))
-      }
+        {studentArr.map((item, index) => (
+          <tr key={index}>
+            <td>{index + 1}</td>
+            <td>{item.firstname}</td>
+            <td>{item.lastname}</td>
+            <td>{item.email}</td>
+            <td>
+              <button className="btn btn-danger btn-sm">Delete</button>
+              <button className="btn btn-warning btn-sm">Edit</button>
+            </td>
+          </tr>
+        ))}
       </table>
     </>
   );
