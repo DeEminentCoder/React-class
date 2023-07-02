@@ -48,7 +48,7 @@ const Signup = () => {
 
         <div className="form-floating my-3">
           <input
-            type="text"
+            type="email"
             placeholder="Email"
             className="form-control"
             onChange={(e) => setemail(e.target.value)}

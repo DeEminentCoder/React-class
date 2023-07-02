@@ -1,4 +1,5 @@
 import './App.css'
+import Api from './assets/components/Api'
 import Herosection from './assets/components/Herosection'
 import Navbar from './assets/components/Navbar'
 import Signup from './assets/components/Signup'
@@ -40,6 +41,7 @@ function App() {
       <Navbar/>
       <Herosection/>
       <Signup/>
+      <Api/>
 
       {/* {
         anotherArray.map((item,index)=>(
