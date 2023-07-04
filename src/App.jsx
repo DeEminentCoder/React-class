@@ -39,7 +39,7 @@ function App() {
   return (
     <>
       <Navbar/>
-      <Herosection/>
+      {/* <Herosection/> */}
       <Signup/>
       <Api/>
 
