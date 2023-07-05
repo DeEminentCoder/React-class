@@ -40,7 +40,7 @@ function App() {
     <>
       <Navbar/>
       {/* <Herosection/> */}
-      <Signup/>
+      {/* <Signup/> */}
       <Api/>
 
       {/* {
