@@ -11,7 +11,7 @@ function App() {
     fontFamily: 'cursive'
   }
 
-  let studentArray = ["John", "Olu", "Kayode", "Simeon"]
+  let studentArray = ["John", "OluwaFemi", "Kayode", "Simeon"]
   // console.log(studentArray);
 
   let anotherArray = [
