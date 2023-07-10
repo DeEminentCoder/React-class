@@ -38,9 +38,9 @@ function App() {
   ]
   return (
     <>
-      <Navbar/>
+      {/* <Navbar/> */}
       {/* <Herosection/> */}
-      <Signup/>
+      {/* <Signup/> */}
       <Api/>
 
       {/* {
