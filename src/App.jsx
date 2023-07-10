@@ -43,7 +43,7 @@ function App() {
       {/* <Signup/> */}
       <Api/>
 
-      {/* {
+      {
         anotherArray.map((item,index)=>(
           <>
           <small>{index+1}</small>
@@ -52,7 +52,7 @@ function App() {
           <h1>{item.age}</h1>
           </>
         ))
-      } */}
+      }
     </>
   )
 }
