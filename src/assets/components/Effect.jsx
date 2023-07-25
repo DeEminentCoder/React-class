@@ -6,7 +6,7 @@ import React, { useEffect, useState } from "react";
 
 const Effect = () => {
     useEffect(() => {
-        console.log("Changing");
+        console.log("Changin");
       }, [])
 
       const [first, setFirst] = useState(0)
