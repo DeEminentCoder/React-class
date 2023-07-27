@@ -14,6 +14,7 @@ const Effect = () => {
       const change = () => {
         setFirst(first+1)
       }
+    
   return (
     <>
     <div>{first}</div>
