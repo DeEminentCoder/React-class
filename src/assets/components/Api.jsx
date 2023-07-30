@@ -17,7 +17,7 @@ const Api = () => {
     
   return (
     <>
-    <button onClick={getData}>Get Datas</button>
+    <button onClick={getData}>Get Dat</button>
     </>
   )
 }
