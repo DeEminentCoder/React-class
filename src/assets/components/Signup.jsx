@@ -53,7 +53,7 @@ const Signup = () => {
             className="form-control"
             onChange={(e) => setemail(e.target.value)}
           />
-          <label htmlFor="Email">Email</label>
+          <label htmlFor="Email">Emal</label>
         </div>
 
         <div className="form-floating my-3">
