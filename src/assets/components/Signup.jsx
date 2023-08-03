@@ -32,7 +32,7 @@ const Signup = () => {
             onChange={(e) => setfirstname(e.target.value)}
             value={firstname}
           />
-          <label htmlFor="Firstname">Firstnae</label>
+          <label htmlFor="Firstname">Firstname</label>
         </div>
 
         <div className="form-floating my-3">
